@@ -34,8 +34,9 @@ gradio_interface = gr.Interface(fn=gradio_filler,
                                 outputs=[gr.Textbox(label="CORRECTED SENTENCE"),
                                          gr.Text(label="SPACE POSITIONS")],
                                 allow_flagging="never",
+                                title="Space Filler",
                                 examples=[["Groundcontrol to Mr.Dot", True],
                                           ["Searchbar is acompoundword", True],
                                           ["Searchbar is acompoundword", False],
-                                          ["Seeyoulater,innovator!", False]]
+                                          ["Seeyoulater,innovator!", False]],
                                 )
